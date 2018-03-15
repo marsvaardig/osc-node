@@ -1,6 +1,6 @@
 # OSC-Node
 
-Video player controlled by [OSC](http://opensoundcontrol.org/) using [QLab](http://figure53.com/qlab/) for the [Raspberry Pi](https://www.raspberrypi.org/) in [Node.js](https://nodejs.org/en/) using [Omxplayer](https://elinux.org/Omxplayer).
+[Raspberry Pi](https://www.raspberrypi.org/) video player controlled by [QLab](http://figure53.com/qlab/) over [OSC](http://opensoundcontrol.org/) written in [Node.js](https://nodejs.org/en/) using [Omxplayer](https://elinux.org/Omxplayer).
 
 ![QLab screenshot with OSC commands](screenshot.png)
 
