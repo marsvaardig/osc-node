@@ -1,0 +1,26 @@
+{
+    "name": "osc-node",
+    "main": "app.js",
+    "version": "0.0.1",
+    "description": "Video player controlled by OSC for the Raspberry Pi in Node.js.",
+    "author": "Tom Janssens",
+    "homepage": "http://tom.janssens.me/",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/marsvaardig/osc-node.git"
+    },
+    "readmeFilename": "README.md",
+    "bugs": "https://github.com/marsvaardig/osc-node/issues",
+    "license": "MIT",
+    "keywords": [
+        "Open Sound Control",
+        "OSC",
+        "Video"
+    ],
+    "dependencies": {
+        "node-cmd": "^3.0.0",
+        "node-omxplayer": "^0.6.1",
+        "npm": "^5.7.1",
+        "osc": "2.2.0"
+    }
+}
