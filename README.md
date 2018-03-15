@@ -1,3 +1,9 @@
+# OSC-Node
+
+Video player controlled by [OSC](http://opensoundcontrol.org/) using [QLab](http://figure53.com/qlab/) for the [Raspberry Pi](https://www.raspberrypi.org/) in [Node.js](https://nodejs.org/en/).
+
+![QLab screenshot with OSC commands](screenshot.png)
+
 ## Install Raspbian
 
 Install the latest [Raspbian Stretch Lite](https://www.raspberrypi.org/downloads/raspbian/) on your SD card.
