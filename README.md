@@ -19,7 +19,7 @@ Create an empty file in the root of the SD card named `ssh` (without dot or exte
 SSH into your Pi and excecute:
 
     $ sudo apt-get install -y git
-    $ git clone https://github.com/tomjanssens/osc-node.git osc-node && cd $_
+    $ git clone https://github.com/marsvaardig/osc-node.git osc-node && cd $_
     $ sh install.sh
 
 ## Setup QLab
