@@ -43,8 +43,8 @@ Network Cue Destionation Patches:
 
 Available OSC addresses & argements:
 
-- `/play videos/big_buck_bunny.mp4`
-- `/loop videos/big_buck_bunny.mp4`
+- `/play /home/pi/videos/big_buck_bunny.mp4`
+- `/loop /home/pi/videos/big_buck_bunny.mp4`
 - `/stop`
 - `/pause` (pause & resume)
 - `/cmd "sudo reboot"`
