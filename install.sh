@@ -6,7 +6,7 @@ sudo apt-get install -y netatalk
 
 ## Install Node.js & NPM
 
-curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 ## Install dependencies
