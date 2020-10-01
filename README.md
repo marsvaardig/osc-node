@@ -22,21 +22,6 @@ SSH into your Pi and excecute:
     $ git clone https://github.com/marsvaardig/osc-node.git osc-node && cd $_
     $ sh install.sh
     
-### Enable AFP
-
-Open the Netatalk config file
-    
-    $ sudo nano /etc/netatalk/afp.conf
-
-To allow Netatalk to connect to /home/pi, all you have to do is uncomment two lines:
-    
-    [Homes]
-    basedir regex = /home
-
-Restart Netatalk with
-
-    sudo systemctl restart netatalk
-
 ## Setup QLab
 
 ### Network
