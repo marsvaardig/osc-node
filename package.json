@@ -20,7 +20,7 @@
     "dependencies": {
         "node-cmd": "^3.0.0",
         "node-omxplayer": "^0.6.1",
-        "npm": "^6.14.6",
-        "osc": "2.2.0"
+        "npm": "^6.14.8",
+        "osc": "2.4.1"
     }
 }
