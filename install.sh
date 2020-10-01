@@ -9,9 +9,9 @@ sudo apt-get install -y netatalk
 sudo rm -f /etc/netatalk/afp.conf
 sudo mv afp.conf-dist /etc/netatalk/afp.conf
 
-### Create directory for videos
+### Create a dedicated AFP directory
 
-mkdir videos
+mkdir ../videos
 
 ## Install Node.js & NPM
 
