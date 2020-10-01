@@ -6,7 +6,7 @@
 
 ## Install Raspbian
 
-Install the latest [Raspbian Stretch Lite](https://www.raspberrypi.org/downloads/raspbian/) on your SD card.
+Install the latest [Raspbian Stretch Lite](https://www.raspberrypi.org/downloads/raspbian/) on your SD card using the [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/).
 
 ### Setup SSH Access
 
