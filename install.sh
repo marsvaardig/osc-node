@@ -4,6 +4,15 @@
 
 sudo apt-get install -y netatalk
 
+### Replace afp.conf
+
+sudo rm -f /etc/netatalk/afp.conf
+sudo mv afp.conf-dist /etc/netatalk/afp.conf
+
+### Create directory for videos
+
+mkdir videos
+
 ## Install Node.js & NPM
 
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
@@ -18,11 +27,6 @@ sudo apt-get install -y omxplayer
 sudo npm install forever -g
 sudo npm install forever-service -g
 sudo forever-service install osc-node
-
-## Setup mount
-
-sudo mkdir /mnt/usb
-sudo mount /dev/sda1 /mnt/usb
 
 ## Install OSC-Node
 
