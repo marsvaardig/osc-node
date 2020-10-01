@@ -22,6 +22,14 @@ SSH into your Pi and excecute:
     $ git clone https://github.com/marsvaardig/osc-node.git osc-node && cd $_
     $ sh install.sh
     
+## Copy videos onto Pi using AFP
+
+Connect from your Mac with a simple command:
+
+`open afp://pi:raspberry@192.168.xxx.xxx`
+
+Or use Finder > Connect to Server
+
 ## Setup QLab
 
 ### Network
@@ -35,16 +43,10 @@ Network Cue Destionation Patches:
 
 Available OSC addresses & argements:
 
-- `/play big_buck_bunny.mp4` or `/play /mnt/usb/my-video.mp4`
-- `/loop big_buck_bunny.mp4` or `/loop /mnt/usb/my-video.mp4`
+- `/play videos/big_buck_bunny.mp4`
+- `/loop videos/big_buck_bunny.mp4`
 - `/stop`
 - `/pause` (pause & resume)
 - `/cmd "sudo reboot"`
 
-## Access your Pi home directory
 
-Connect from your Mac with a simple command:
-
-`open afp://pi:raspberry@192.168.xxx.xxx`
-
-Or use Finder > Connect to Server
