@@ -1,0 +1,18 @@
+;
+; Netatalk 3.x configuration file
+;
+
+[Global]
+; Global server settings
+; guest account = pi
+
+[Homes]
+basedir regex = /home
+path = /videos
+
+; [My AFP Volume]
+; path = /videos
+
+; [My Time Machine Volume]
+; path = /path/to/backup
+; time machine = yes
