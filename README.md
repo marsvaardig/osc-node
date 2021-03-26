@@ -1,6 +1,6 @@
 # OSC-Node
 
-[Raspberry Pi](https://www.raspberrypi.org/) video player controlled by [QLab](http://figure53.com/qlab/) over [OSC](http://opensoundcontrol.org/) written in [Node.js](https://nodejs.org/en/) using [Omxplayer](https://elinux.org/Omxplayer).
+[Raspberry Pi](https://www.raspberrypi.org/) media player controlled by [QLab](http://figure53.com/qlab/) over [OSC](http://opensoundcontrol.org/) written in [Node.js](https://nodejs.org/en/) using [Omxplayer](https://elinux.org/Omxplayer).
 
 ![QLab screenshot with OSC commands](screenshot.png)
 
@@ -36,10 +36,12 @@ Network Cue Destionation Patches:
 
 Available OSC addresses & argements:
 
-- `/play /home/pi/videos/big_buck_bunny.mp4`
-- `/loop /home/pi/videos/big_buck_bunny.mp4`
+- `/play {sound interface} {file location}`
+- `/loop {sound interface} {file location}`
 - `/stop`
 - `/pause` (pause & resume)
 - `/cmd "{command to execute}"`
+
+`/play hdmi /home/pi/videos/big_buck_bunny.mp4`
 
 
