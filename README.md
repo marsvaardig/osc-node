@@ -42,6 +42,12 @@ Available OSC addresses & argements:
 - `/pause` (pause & resume)
 - `/cmd "{command to execute}"`
 
-`/play hdmi /home/pi/videos/big_buck_bunny.mp4`
+Sound Interfaces:
+- `hdmi`
+- `local`
+- `both`
+- `alsa{:device}`
 
+Example:
 
+`/play both /home/pi/videos/big_buck_bunny.mp4`
