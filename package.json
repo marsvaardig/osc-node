@@ -2,7 +2,7 @@
     "name": "osc-node",
     "main": "app.js",
     "version": "0.0.1",
-    "description": "Video player controlled by OSC for the Raspberry Pi in Node.js.",
+    "description": "Media player controlled by OSC for the Raspberry Pi in Node.js.",
     "author": "Tom Janssens",
     "homepage": "http://tom.janssens.me/",
     "repository": {
