@@ -4,8 +4,7 @@
 
 ![QLab screenshot with OSC commands](screenshot.png)
 
-## Install Raspbian
-
+## Install Raspberry Pi OS
 Install the latest [Raspberry Pi OS](https://www.raspberrypi.org/software/operating-systems/) on your SD card using the [Raspberry Pi Imager](https://www.raspberrypi.org/software/).
 
 ### Setup SSH Access
@@ -26,7 +25,7 @@ SSH into your Pi and excecute:
 
 Connect from your Mac with a simple command:
 
-`open afp://pi:raspberry@{ip address}`
+`open afp://pi@{ip address}`
 
 Or use Finder > Connect to Server
 
