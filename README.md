@@ -7,12 +7,6 @@
 ## Install Raspberry Pi OS
 Install the latest [Raspberry Pi OS](https://www.raspberrypi.org/software/operating-systems/) on your SD card using the [Raspberry Pi Imager](https://www.raspberrypi.org/software/).
 
-### Setup SSH Access
-
-Create an empty file in the root of the SD card named `ssh` (without dot or extension).
-
-    $ touch /Volumes/boot/ssh
-
 ## Install OSC-Node
 
 SSH into your Pi and excecute:
