@@ -27,7 +27,7 @@ var getIPAddresses = function () {
 
 var udpPort = new osc.UDPPort({
     localAddress: "0.0.0.0",
-    localPort: 57121
+    localPort: 57121 // sets the port number used for osc/qlab.
 });
 
 udpPort.on("ready", function () {
@@ -43,23 +43,23 @@ udpPort.on("ready", function () {
 });
 
 udpPort.on("message", function (oscMessage) {
-    if(oscMessage.address == '/play') {
-        omxplayer.newSource(oscMessage.args[0], 'hdmi', false, 100);
+    if (oscMessage.address == '/play') {
+        omxplayer.newSource(oscMessage.args[1], oscMessage.args[0], false, 100);
     }
 
-    if(oscMessage.address == '/loop') {
-        omxplayer.newSource(oscMessage.args[0], 'hdmi', true, 100);
+    if (oscMessage.address == '/loop') {
+        omxplayer.newSource(oscMessage.args[1], oscMessage.args[0], true, 100);
     }
 
-    if(oscMessage.address == '/pause' && omxplayer.running) {
+    if (oscMessage.address == '/pause' && omxplayer.running) {
         omxplayer.pause();
     }
 
-    if(oscMessage.address == '/stop' && omxplayer.running) {
+    if (oscMessage.address == '/stop' && omxplayer.running) {
         omxplayer.quit();
     }
 
-    if(oscMessage.address == '/cmd') {
+    if (oscMessage.address == '/cmd') {
         cmd.run(oscMessage.args[0]);
     }
 });
