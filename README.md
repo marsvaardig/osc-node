@@ -26,7 +26,7 @@ SSH into your Pi and excecute:
 
 Connect from your Mac with a simple command:
 
-`open afp://pi:raspberry@192.168.xxx.xxx`
+`open afp://pi:raspberry@{ip address}`
 
 Or use Finder > Connect to Server
 
@@ -47,6 +47,6 @@ Available OSC addresses & argements:
 - `/loop /home/pi/videos/big_buck_bunny.mp4`
 - `/stop`
 - `/pause` (pause & resume)
-- `/cmd "sudo reboot"`
+- `/cmd "{command to execute}"`
 
 
