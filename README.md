@@ -15,6 +15,8 @@ SSH into your Pi and excecute:
     $ git clone https://github.com/marsvaardig/osc-node.git osc-node && cd $_
     $ sh install.sh
     
+This will install OSC-Node, Omxplayer and any OSC-Node dependencies.
+    
 ## Copy videos onto Pi using AFP
 
 Connect from your Mac with a simple command:
