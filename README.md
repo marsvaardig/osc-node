@@ -38,8 +38,8 @@ Network Cue Destionation Patches:
 
 Available OSC addresses & argements:
 
-- `/play {sound interface} {file location}`
-- `/loop {sound interface} {file location}`
+- `/play {file location} {sound interface}`
+- `/loop {file location} {sound interface}`
 - `/stop`
 - `/pause` (pause & resume)
 - `/cmd "{command to execute}"`
@@ -50,6 +50,7 @@ Sound Interfaces:
 - `both`
 - `alsa{:device}`
 
-Example:
+Examples:
 
-`/play both /home/pi/videos/big_buck_bunny.mp4`
+`/play /home/pi/videos/big_buck_bunny.mp4 both`
+`/play /home/pi/videos/big_buck_bunny.mp4`
