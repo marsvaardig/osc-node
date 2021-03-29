@@ -44,7 +44,12 @@ udpPort.on("ready", function () {
 
 udpPort.on("message", function (oscMessage) {
   if (oscMessage.address == "/play") {
-    omxplayer.newSource(oscMessage.args[1], oscMessage.args[0], false, 100);
+      if (oscMessage.args[1].length >= 1) {
+        omxplayer.newSource(oscMessage.args[1], oscMessage.args[0], false, 100);
+      }
+      else {
+        omxplayer.newSource(oscMessage.args[0], 'hdmi', false, 100);
+      }
   }
 
   if (oscMessage.address == "/loop") {
