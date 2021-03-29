@@ -1,32 +1,28 @@
 # OSC-Node
 
-[Raspberry Pi](https://www.raspberrypi.org/) video player controlled by [QLab](http://figure53.com/qlab/) over [OSC](http://opensoundcontrol.org/) written in [Node.js](https://nodejs.org/en/) using [Omxplayer](https://elinux.org/Omxplayer).
+[Raspberry Pi](https://www.raspberrypi.org/) media player controlled by [QLab](http://figure53.com/qlab/) over [OSC](http://opensoundcontrol.org/) written in [Node.js](https://nodejs.org/en/) using [Omxplayer](https://elinux.org/Omxplayer).
 
 ![QLab screenshot with OSC commands](screenshot.png)
 
-## Install Raspbian
+## Install Raspberry Pi OS
 
-Install the latest [Raspbian Stretch Lite](https://www.raspberrypi.org/downloads/raspbian/) on your SD card using the [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/).
-
-### Setup SSH Access
-
-Create an empty file in the root of the SD card named `ssh` (without dot or extension).
-
-    $ touch /Volumes/boot/ssh
+Install the latest [Raspberry Pi OS](https://www.raspberrypi.org/software/operating-systems/) on your SD card using the [Raspberry Pi Imager](https://www.raspberrypi.org/software/).
 
 ## Install OSC-Node
 
-SSH into your Pi and excecute:
+SSH into your Pi and execute:
 
     $ sudo apt-get install -y git
-    $ git clone https://github.com/marsvaardig/osc-node.git osc-node && cd $_
+    $ git clone https://github.com/kaninte/osc-node.git osc-node && cd $_
     $ sh install.sh
-    
+
+This will install OSC-Node, Omxplayer and any OSC-Node dependencies.
+
 ## Copy videos onto Pi using AFP
 
 Connect from your Mac with a simple command:
 
-`open afp://pi:raspberry@192.168.xxx.xxx`
+`open afp://pi:raspberry@{ip address}`
 
 Or use Finder > Connect to Server
 
@@ -34,19 +30,28 @@ Or use Finder > Connect to Server
 
 ### Network
 
-Network Cue Destionation Patches:
+Network Cue Destination Patches:
 
 - Destination: IP address of the Raspberry Pi
 - Port: 57121
 
 ### OSC message
 
-Available OSC addresses & argements:
+Available OSC addresses & arguments:
 
-- `/play /home/pi/videos/big_buck_bunny.mp4`
-- `/loop /home/pi/videos/big_buck_bunny.mp4`
+- `/play {sound interface} {file location}`
+- `/loop {sound interface} {file location}`
 - `/stop`
 - `/pause` (pause & resume)
-- `/cmd "sudo reboot"`
+- `/cmd "{command to execute}"`
 
+Sound Interfaces:
 
+- `hdmi`
+- `local`
+- `both`
+- `alsa{:device}`
+
+Example:
+
+`/play both /home/pi/videos/big_buck_bunny.mp4`
