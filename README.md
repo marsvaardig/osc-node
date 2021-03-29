@@ -13,7 +13,7 @@ Install the latest [Raspberry Pi OS](https://www.raspberrypi.org/software/operat
 SSH into your Pi and execute:
 
     $ sudo apt-get install -y git
-    $ git clone https://github.com/marsvaardig/osc-node.git osc-node && cd $_
+    $ git clone https://github.com/kaninte/osc-node.git osc-node && cd $_
     $ sh install.sh
 
 This will install OSC-Node, Omxplayer and any OSC-Node dependencies.
