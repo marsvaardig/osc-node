@@ -44,29 +44,11 @@ udpPort.on("ready", function () {
 
 udpPort.on("message", function (oscMessage) {
   if (oscMessage.address == "/play") {
-    if (
-      oscMessage.args[1] == "both" ||
-      oscMessage.args[1] == "hdmi" ||
-      oscMessage.args[1] == "local" ||
-      oscMessage.args[1].includes("alsa")
-    ) {
-      omxplayer.newSource(oscMessage.args[0], oscMessage.args[1], false, 100);
-    } else {
-      omxplayer.newSource(oscMessage.args[0], "both", false, 100);
-    }
+    omxplayer.newSource(oscMessage.args[1], oscMessage.args[0], false, 100);
   }
 
   if (oscMessage.address == "/loop") {
-    if (
-      oscMessage.args[1] == "both" ||
-      oscMessage.args[1] == "hdmi" ||
-      oscMessage.args[1] == "local" ||
-      oscMessage.args[1].includes("alsa")
-    ) {
-      omxplayer.newSource(oscMessage.args[0], oscMessage.args[1], true, 100);
-    } else {
-      omxplayer.newSource(oscMessage.args[0], "both", true, 100);
-    }
+    omxplayer.newSource(oscMessage.args[1], oscMessage.args[0], true, 100);
   }
 
   if (oscMessage.address == "/pause" && omxplayer.running) {
