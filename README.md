@@ -22,7 +22,7 @@ This will install OSC-Node, Omxplayer and any OSC-Node dependencies.
 
 Connect from your Mac with a simple command:
 
-`open afp://pi@{ip address}`
+`open afp://pi:raspberry@{ip address}`
 
 Or use Finder > Connect to Server
 
